@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  flex-basis: 200px;
+  flex-shrink: 0;
+  margin: 0 15px;
+  transition: all 0.4s;
+}
+
+.nav-item img {
+  width: 100%;
+}
+
+.nav-item:hover {
+  flex-basis: 250px;
+  margin: 0 25px;
+}
+
+.nav-item:hover .card-contents p {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-contents {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: orange;
+}
+
+.card-contents p {
+  color: lightgray;
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 200px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+  opacity: 0;
+  transition-delay: 0.4s;
+}
+
+.card-contents h2 {
+  font-size: 45px;
+}
